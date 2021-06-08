@@ -1,0 +1,8 @@
+{
+  "name": "htdocs",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "strava-v3": "^2.0.9"
+  }
+}
