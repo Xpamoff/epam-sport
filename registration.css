@@ -1,18 +1,10 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Candara Light";
-}
-body{
-    width: 100vw;
-    height: 100vh;
+form{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-a{
+input{
     padding: 20px;
     background-color: #ff8431;
     color: white;
@@ -22,15 +14,16 @@ a{
     margin: 5px;
     font-size: 25px;
     transition: .5s;
+    border: 2px solid white;
 }
-
-a:hover{
+.input{
+    cursor: auto !important;
+}
+input::placeholder{
+    color: white;
+}
+input:hover{
     color: #ff8431;
     background-color: white;
-}
-
-.title{
-    font-size: 25px;
-    color: black;
-    margin-bottom: 15px;
+    border: 2px solid #ff8431;
 }
