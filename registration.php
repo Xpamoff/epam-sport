@@ -33,7 +33,7 @@
 <form class="login" method="post">
     <input type="text" name="login" placeholder="Логин" class="input" required>
     <input type="password" name="password" placeholder="Пароль" class="input" required>
-    <input type="submit" value="Войти" name="submit">
+    <button type="submit" name="submit" class="box"><span>Войти</span></button>
 </form>
 
 <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>

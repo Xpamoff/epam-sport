@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <a href="http://www.strava.com/oauth/authorize?client_id=66900&response_type=code&redirect_uri=http://localhost/epam-sport/oauthwork.php&approval_prompt=force&scope=read">Участвовать</a>
-    <a href="registration.php">Войти как админ</a>
+    <div class="title">Epamsport</div>
+    <a class="box" href="http://www.strava.com/oauth/authorize?client_id=66900&response_type=code&redirect_uri=http://localhost/epam-sport/oauthwork.php&approval_prompt=force&scope=read"><span>Участвовать</span></a>
+    <a class="box" href="registration.php"><span>Войти как админ</span></a>
     <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>

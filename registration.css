@@ -6,24 +6,24 @@ form{
 }
 input{
     padding: 20px;
-    background-color: #ff8431;
-    color: white;
+    background-color: white;
+    color: black;
     cursor: pointer;
     text-decoration: none;
-    border-radius: 6px;
     margin: 5px;
     font-size: 25px;
     transition: .5s;
-    border: 2px solid white;
+    border: 2px solid black;
 }
 .input{
     cursor: auto !important;
 }
 input::placeholder{
-    color: white;
+    color: black;
 }
-input:hover{
-    color: #ff8431;
+button{
     background-color: white;
-    border: 2px solid #ff8431;
+    cursor: pointer;
+    margin-top: 30px !important;
+    width: 200px !important;
 }
