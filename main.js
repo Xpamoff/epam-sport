@@ -47,7 +47,7 @@ $.ajax(settings).done(function (response) {
             else {
                 expires = "";
             }
-            document.cookie = escape(name) + "=" + escape(value) + expires + "; path=/";
+            document.cookie = escape(name) + "=" + escape(encodeURIComponent(value)) + expires + "; path=/";
         }
         location.href = "create-base.php";
     });

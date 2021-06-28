@@ -1,12 +1,16 @@
 <?php
 session_start();
-$link = mysqli_connect('localhost','root','','id-base');
+$link = mysqli_connect('localhost','mysql','mysql','id-base');
 $data_temp = mysqli_query($link, 'SELECT * FROM `admin` WHERE 1');
 $data = mysqli_fetch_array($data_temp);
 if($_SESSION['password']==$data['password']){
 
 }
 else{
+    header('Location: index.php');
+}
+if(isset($_POST['submit'])){
+    $_SESSION['password']='-1';
     header('Location: index.php');
 }
 ?>
@@ -23,9 +27,10 @@ else{
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <a href="magic.php">Вывести данные участников в таблицу</a>
+<div class="title">Панель администратора</div>
+    <a class="box" href="magic.php"><span>Вывести данные участников в таблицу</span></a>
     <form method="post">
-        <input type="submit" value="Выйти" name="submit">
+        <button type="submit" name="submit" class="box"><span>Выйти</span></button>
     </form>
     <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

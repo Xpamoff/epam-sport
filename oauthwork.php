@@ -8,6 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <style>
+        .code{
+            opacity: 0;
+        }
+    </style>
 </head>
 <body>
     <?php

@@ -1,6 +1,15 @@
 <?php
     session_start();
-    $link = mysqli_connect('localhost','root','','id-base');
+
+    $link = mysqli_connect('localhost','mysql','mysql','id-base');
+
+
+$data_temp = mysqli_query($link, 'SELECT * FROM `admin` WHERE 1');
+$data = mysqli_fetch_array($data_temp);
+if ($_SESSION['password'] == $data['password']) {
+    header('Location: admin-panel.php');
+}
+
     if(isset($_POST['submit'])){
         if((isset($_POST['login']))AND(isset($_POST['password']))){
             $login = $_POST['login'];
